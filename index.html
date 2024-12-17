@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Toekomst over 4 Jaar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Mijn Blik op de Toekomst</h1>
+        <p>Een overzicht van waar ik sta aan het einde van mijn opleiding</p>
+    </header>
+
+    <!-- Mijn (tech) skills -->
+    <section id="tech-skills">
+        <h2>Mijn (tech) skills aan het einde van de opleiding</h2>
+        <ul>
+            <li>Cybersecurity (Penetration Testing, Ethical Hacking)</li>
+            <li>Netwerkbeveiliging en encryptie</li>
+            <li>Back-end development (Python, SQL)</li>
+            <li>Versiebeheer met GitHub</li>
+            <li>Incident Response en Monitoring</li>
+        </ul>
+    </section>
+
+    <!-- Mijn soft skills -->
+    <section id="soft-skills">
+        <h2>Mijn soft skills straks</h2>
+        <ul>
+            <li>Communicatie</li>
+            <li>Probleemoplossend denken</li>
+            <li>Kritisch denken</li>
+            <li>Leiderschap</li>
+            <li>Stressbestendigheid</li>
+        </ul>
+        <img src="images/skills.png" alt="Samenwerken aan een project" class="modal-trigger">
+    </section>
+
+    <!-- Wat wil ik bereikt hebben -->
+    <section id="achievements">
+        <h2>Wat wil ik bereikt hebben</h2>
+        <p>Ik heb succesvolle cybersecurity-tools en projecten ontwikkeld, zoals een penetratietestframework en geavanceerde netwerkmonitoring.</p>
+        <img src="images/cybersecurity.jpg" alt="Cybersecurity Project" class="modal-trigger">
+    </section>
+
+    <!-- Na het Ma! -->
+    <section id="future-path">
+        <h2>Na het Ma!</h2>
+        <p>Ik wil verder studeren in Cybersecurity aan de Technische Universiteit Eindhoven of starten met werken als cybersecurity-specialist bij een bedrijf zoals KPN of Cisco.</p>
+        <img src="images/Atlas_TUe_overzicht.jpg" alt="Technische Universiteit Eindhoven" class="modal-trigger">
+    </section>
+
+    <!-- Mijn droombaan dagboek -->
+    <section id="dream-job">
+        <h2>Mijn droombaan dagboek</h2>
+        <p>Een typische werkdag als cybersecurity-specialist:</p>
+        <ul>
+            <li>8:45 - Koffie en monitoren van logs voor verdachte activiteiten</li>
+            <li>9:30 - Vulnerability assessment uitvoeren</li>
+            <li>11:00 - Overleg met het IT-team over beveiligingsverbeteringen</li>
+            <li>13:00 - Lunchpauze</li>
+            <li>14:00 - Penetratietesten uitvoeren op netwerken</li>
+            <li>16:00 - Rapportage en aanbevelingen opstellen</li>
+        </ul>
+        <img src="images/ShutterStock-4-1080x675.jpg" alt="Cybersecurity Specialist aan het werk" class="modal-trigger">
+    </section>
+
+    <!-- Andere droom -->
+    <section id="other-dream">
+        <h2>Een andere droom</h2>
+        <p>Naast mijn werk als cybersecurity-specialist wil ik een eigen consultancybedrijf oprichten om kleine bedrijven te helpen met hun beveiliging.</p>
+        <img src="images/consultancy.webp" alt="Cybersecurity Consultancy" class="modal-trigger">
+    </section>
+
+    <!-- Modal Container -->
+    <div id="modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mijn Toekomst Portfolio</p>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        // Modal script
+        $(document).ready(function () {
+            $('.modal-trigger').click(function () {
+                $('#modal').css('display', 'block');
+                $('#modal-img').attr('src', $(this).attr('src'));
+                $('#caption').text($(this).attr('alt'));
+            });
+            $('.close-modal').click(function () {
+                $('#modal').css('display', 'none');
+            });
+        });
+    </script>
+</body>
+</html>

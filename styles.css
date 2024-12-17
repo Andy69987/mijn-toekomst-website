@@ -1,0 +1,109 @@
+/* Algemene stijl */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #1c1c1c; /* Zwartachtig achtergrondkleur */
+    color: #e4e4e4; /* Lichtgrijs tekstkleur */
+}
+
+header, footer {
+    background-color: #3d1f47; /* Donkerpaars */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+h1, h2 {
+    color: #d4a3ff; /* Lichter paars voor koppen */
+}
+
+section {
+    background-color: #2b2b2b; /* Donkergrijs */
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 8px;
+    max-width: 900px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    height: auto;
+    border: 2px solid #3d1f47;
+}
+
+.close-modal {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    cursor: pointer;
+}
+
+#caption {
+    text-align: center;
+    color: #d4a3ff;
+    padding: 10px;
+    font-style: italic;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    section {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
